@@ -17,7 +17,6 @@ from math import hypot
 
 
 
-
 def extract_LOG_coordinates(image): 
     """Extracts Coordinates of Nanoparticle Centers."""
     
@@ -27,7 +26,6 @@ def extract_LOG_coordinates(image):
     laplace_coords[:, 2] = laplace_coords[:, 2] * sqrt(2) # Compute radii in the 3rd column.
 
     return laplace_coords
-
 
 
 
@@ -53,14 +51,12 @@ def plot_overlaid_coordinates(laplace_coords, image):
     
     
 
-
 def euclidean_distance(p1,p2):
     """Calculates Euclidean distance between two points."""
     
     x1,y1 = p1
     x2,y2 = p2
     return hypot(x2 - x1, y2 - y1)
-
 
 
 
@@ -86,7 +82,6 @@ def neighboring_distance(laplace_coords, n_neighbors, max_distance = 50):
     top_n_dist_df = pd.DataFrame(top_n_dist)
     return top_n_dist_df
     
-
 
 
 def plot_distance_histogram(top_n_dist_df, n_neighbors = None):
@@ -129,7 +124,7 @@ for n_neighbors in range(1,21): #cycle over range of n_neighbors values. #1-20.
     top_n_dist_df = neighboring_distance(laplace_coords, n_neighbors, max_distance = 20) 
     plot_distance_histogram(top_n_dist_df, n_neighbors) #plot histogram of Euclidean_Distance for each n_neighbors. 
     
-    #Compare summary statistics for each n_neighbors value. 
+    #Compare summary statistics for each n_neighbors results. 
     mean_n.append(round(float(np.mean(top_n_dist_df)), 2))
     median_n.append(round(float(np.median(top_n_dist_df)), 2))
     std_n.append(round(float(np.std(top_n_dist_df)), 2))
