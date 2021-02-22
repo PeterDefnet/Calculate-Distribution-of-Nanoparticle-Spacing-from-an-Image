@@ -28,7 +28,6 @@ image = cv2.imread(filepath, 0) #Defined for later use. The '(,0)' makes the ima
 
 
 
-
 def plot_original_image(filepath):
     """Plot full-color version of original image"""
     plt.imshow(cv2.imread(filepath))
@@ -38,10 +37,8 @@ def plot_original_image(filepath):
 
 
 
-
 #Plot input image with original colors
 plot_original_image(filepath)
-
 
 
 
@@ -61,10 +58,8 @@ def extract_LOG_coordinates(image):
 
 
 
-
 # Extract Coordinates from where NP's are. 
 laplace_coords = extract_LOG_coordinates(image) 
-
 
 
 
@@ -88,12 +83,10 @@ def plot_overlaid_coordinates(image, laplace_coords):
     plt.tight_layout()
     plt.show()
     
- 
     
     
 # Visualize Coords overlaid on image. 
 plot_overlaid_coordinates(image, laplace_coords) #Plot All Identified Coordinates  
-    
     
     
     
@@ -120,10 +113,8 @@ def column(matrix, i): #select i columns of array.
     
     
 
-
 # Visualize Delaunay Tessellation at all laplace_coords.
 plot_connected_delaunay(laplace_coords)   
-    
     
     
     
@@ -143,7 +134,6 @@ def find_neighbors(pindex, triang): #pindex = point index.
     #now we just have to strip out all the dulicate indices and return the neighbors list:
     return list(set(neighbors))
  
-
     
     
 def plot_direct_neighbors(image, laplace_coords, plot_examples = 6):
@@ -216,10 +206,8 @@ def plot_direct_neighbors(image, laplace_coords, plot_examples = 6):
 
 
 
-
 # Visualize Examples of identified neighbors
 plot_direct_neighbors(image, laplace_coords, plot_examples = 6)
-    
     
     
     
@@ -230,8 +218,7 @@ def euclidean_distance(p1,p2):
     x2,y2 = p2
     return hypot(x2 - x1, y2 - y1)    
     
-    
-    
+      
     
 def direct_neighbor_distance(laplace_coords, max_distance = 100, scale_bar = 1):
     """Creates list of euclidean distances between points, only considering direct neighbors found with Delaunay tessellation. 
@@ -267,12 +254,10 @@ def direct_neighbor_distance(laplace_coords, max_distance = 100, scale_bar = 1):
             
     return distances
     
-    
-    
+     
     
 # Extract list of distances between direct neighbors only.
 distances = direct_neighbor_distance(laplace_coords, max_distance = 100)    
-    
     
     
     
@@ -299,10 +284,8 @@ def plot_neighbor_histogram(distances, scale_bar = 1, scale_bar_unit = "Pixels")
     
     
 
-
 # Plot histogram of neighboring Euclidean distances
 plot_neighbor_histogram(distances)
-    
     
     
     
