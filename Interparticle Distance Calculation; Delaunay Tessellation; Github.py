@@ -28,6 +28,7 @@ image = cv2.imread(filepath, 0) #Defined for later use. The '(,0)' makes the ima
 
 
 
+
 def plot_original_image(filepath):
     """Plot full-color version of original image"""
     plt.imshow(cv2.imread(filepath))
@@ -40,6 +41,7 @@ def plot_original_image(filepath):
 
 #Plot input image with original colors
 plot_original_image(filepath)
+
 
 
 
@@ -56,6 +58,7 @@ def extract_LOG_coordinates(image):
 
 
     return laplace_coords
+
 
 
 
@@ -85,12 +88,11 @@ def plot_overlaid_coordinates(image, laplace_coords):
     plt.tight_layout()
     plt.show()
     
-    
+ 
     
     
 # Visualize Coords overlaid on image. 
 plot_overlaid_coordinates(image, laplace_coords) #Plot All Identified Coordinates  
-    
     
     
     
@@ -125,7 +127,6 @@ plot_connected_delaunay(laplace_coords)
     
     
     
-    
 def find_neighbors(pindex, triang): #pindex = point index.
     """Finds direct neighbors of Delaunay Tessellation.
     pindex: int : point index of 'laplace_coords', for which neighbors are found relative to. 
@@ -142,8 +143,6 @@ def find_neighbors(pindex, triang): #pindex = point index.
     #now we just have to strip out all the dulicate indices and return the neighbors list:
     return list(set(neighbors))
  
-
-
 
     
     
@@ -195,7 +194,6 @@ def plot_direct_neighbors(image, laplace_coords, plot_examples = 6):
         y2, x2, r2 = center
         c2 = plt.Circle((x2, y2), r2, color="red", linewidth=1, fill=False)
         ax1.add_patch(c2)
-        
         
         
         #Right Plot (ax2)
@@ -272,10 +270,9 @@ def direct_neighbor_distance(laplace_coords, max_distance = 100, scale_bar = 1):
     
     
     
-    
-    
 # Extract list of distances between direct neighbors only.
 distances = direct_neighbor_distance(laplace_coords, max_distance = 100)    
+    
     
     
     
@@ -301,7 +298,6 @@ def plot_neighbor_histogram(distances, scale_bar = 1, scale_bar_unit = "Pixels")
         plt.show()    
     
     
-    
 
 
 # Plot histogram of neighboring Euclidean distances
@@ -310,56 +306,3 @@ plot_neighbor_histogram(distances)
     
     
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
