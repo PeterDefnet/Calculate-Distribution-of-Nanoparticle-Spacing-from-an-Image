@@ -91,7 +91,7 @@ plot_overlaid_coordinates(image, laplace_coords) #Plot All Identified Coordinate
     
     
 def plot_connected_delaunay(laplace_coords):
-"""Plots Delaunay Tessellation of all laplace_coords. """
+    """Plots Delaunay Tessellation of all laplace_coords. """
     dela = scipy.spatial.Delaunay
     points = np.array(column(laplace_coords, [0 , 1])) #note np.array object is used for plt.triplot()
     triang = dela(points) #
