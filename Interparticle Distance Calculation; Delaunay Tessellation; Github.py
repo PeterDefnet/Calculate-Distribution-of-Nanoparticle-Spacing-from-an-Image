@@ -163,7 +163,9 @@ def plot_direct_neighbors(image, laplace_coords, plot_examples = 6):
         
         ax1.set_title("Neighbors Overlaid on LOG", fontsize = 11)    
         ax2.set_title("Neighbors Overlaid on Grayscale", fontsize = 11)
-        
+                
+        ax1.tick_params(axis='both', labelsize= 8)
+        ax2.tick_params(axis='both', labelsize= 8)
         
         #Left Plot (ax1)
         
