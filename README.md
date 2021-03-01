@@ -1,6 +1,9 @@
 # Calculation-of-Particle-Spacing-from-an-Image
-Here I calculate the distribution of interparticle spacing between thousands of nanoparticles randomly positioned on a substrate. 
 <br>
+Here I calculate the distribution of interparticle spacing between thousands of nanoparticles randomly positioned on a substrate. 
+
+<br>
+
 I use a Laplacian of Gaussian (LOG) spatial filter to extract each particle's (x,y) coordinates from the input image. 
 
 <br>
