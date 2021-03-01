@@ -5,8 +5,3 @@ Here I calculate the distribution of interparticle spacing between thousands of 
 
 **For a walkthrough of the code, please view the attached Jupyter Notebook (.ipynb)**
 
-
-
-I use a Laplacian of Gaussian (LOG) spatial filter to extract each particle's (x,y) coordinates from the input image. <br>
-
-I then calculate the Euclidean distance to each particle's direct neighbors, found using Delaunay Tessellation. The results are summarized in a histogram. 
