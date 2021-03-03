@@ -26,7 +26,7 @@ The yellow circles show the identified particles. The large circles demonstrate 
 
 <br>
 
-Next, we wanted to find the interparticle spacing, though importantly by only considering particles that were direct neighbors. Programmatically identifying direct neighbors was diffiult because it's not only dependent on distance! In fact, if we only consider the nearest 'n' neighbors, there were many instances where the identified closest particles were 'behind' the true neighbors, while igoring particles further away in a direct line of sight. 
+Next, we wanted to find the interparticle spacing, though importantly by only considering particles that were direct neighbors. Programmatically identifying direct neighbors was diffiult because it's not only dependent on distance! In fact, if we only considered the nearest 'n' neighbors, there were many instances where the identified closest particles were 'behind' the true neighbors, while igoring particles further away in a direct line of sight. 
 <br>
 <br>
 Luckily, a method exists called "Delaunay Tessellation", which draws trianlges between all points, while maximizing the vertex angles. Interestingly, it is the same algorithm used in finite element simulation to create a 'mesh' pattern - used to define spatial points in physics simulations.
@@ -63,5 +63,6 @@ Overall, this tool serves as a quick and reliable method to characterize the par
 <br>
 <br>
 *Please click each Figure to view in higher resolution! 
+<br>
 **For a walkthrough of the code, please view the attached Jupyter Notebook (.ipynb)**
 
