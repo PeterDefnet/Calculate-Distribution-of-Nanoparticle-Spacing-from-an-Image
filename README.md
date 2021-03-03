@@ -29,7 +29,7 @@ The yellow circles show the identified particles. The large circles demonstrate 
 Next, we wanted to find the interparticle spacing, though importantly by only considering particles that were direct neighbors. Programmatically identifying direct neighbors was diffiult because it's not only dependent on distance! In fact, if we only considered the nearest 'n' neighbors, there were many instances where the identified closest particles were 'behind' the true neighbors, while igoring particles further away in a direct line of sight. 
 <br>
 <br>
-Luckily, a method exists called "Delaunay Tessellation", which draws trianlges between all points, while maximizing the vertex angles. Interestingly, it is the same algorithm used in finite element simulation to create a 'mesh' pattern - used to define spatial points in physics simulations.
+Luckily, a method exists called "Delaunay Tessellation", which draws trianlges between all points, while maximizing the vertex angles. Interestingly, it is the same algorithm used in finite element simulation to create a 'mesh' pattern - used to define points in physics simulations.
 <br>
 <br>
 The image below show the result of the tessellation on all points in the image. 
