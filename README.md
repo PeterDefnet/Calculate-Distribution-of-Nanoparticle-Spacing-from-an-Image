@@ -26,7 +26,7 @@ The yellow circles show the identified particles. The large circles demonstrate 
 
 <br>
 
-Next, we want to find the interparticle spacing, though importantly by only considering particles that are direct neighbors. Programmatically identifying direct neighbors is diffiult because it is not only dependent on distance! In fact, if we only consider the nearest 'n' neighbors, there are many instances where the closest particles are 'behind' the true neighbors, while igoring particles further away in a direct line of sight. 
+Next, we wanted to find the interparticle spacing, though importantly by only considering particles that were direct neighbors. Programmatically identifying direct neighbors was diffiult because it's not only dependent on distance! In fact, if we only consider the nearest 'n' neighbors, there were many instances where the identified closest particles were 'behind' the true neighbors, while igoring particles further away in a direct line of sight. 
 <br>
 <br>
 Luckily, a method exists called "Delaunay Tessellation", which draws trianlges between all points, while maximizing the vertex angles. Interestingly, it is the same algorithm used in finite element simulation to create a 'mesh' pattern - used to define spatial points in physics simulations.
@@ -46,7 +46,7 @@ The SciPy implementation outputs all connected vertices, and with a little logic
   
  <br>
  
- Lastly, we find the Euclidean distance between all neighboring points, and summarize the results in a histogram. 
+ Lastly, we calculate the Euclidean distance between all neighboring points, and summarize the results in a histogram. 
  
  <br>
 
@@ -54,7 +54,7 @@ The SciPy implementation outputs all connected vertices, and with a little logic
 ![image](https://user-images.githubusercontent.com/69371709/109754220-7dc15600-7b98-11eb-9cd4-4357d06a9aae.png)
 
   
-Thus, this tool serves as a quick and reliable method to characterize the particle spacing in our lab's newly developed arrays! 
+Overall, this tool serves as a quick and reliable method to characterize the particle spacing in our lab's newly developed arrays! 
 
 
 
@@ -62,6 +62,6 @@ Thus, this tool serves as a quick and reliable method to characterize the partic
 
 <br>
 <br>
-
+*Please click each Figure to view in higher resolution! 
 **For a walkthrough of the code, please view the attached Jupyter Notebook (.ipynb)**
 
