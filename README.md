@@ -64,7 +64,9 @@ Overall, this tool serves as a quick and reliable method to characterize the par
 
 <br>
 <br>
-_**Please click each Figure to view in higher resolution!**_
+**Please click each Figure to view in higher resolution!**
+
 <br>
+
 **For a walkthrough of the code, please view the attached Jupyter Notebook (.ipynb)**
 
