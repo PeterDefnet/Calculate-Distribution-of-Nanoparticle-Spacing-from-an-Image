@@ -42,7 +42,8 @@ The SciPy implementation outputs all connected vertices, and with a little logic
 <br>
 
 ![image](https://user-images.githubusercontent.com/69371709/109754323-a3e6f600-7b98-11eb-840e-0cc096fa9043.png)
-![image](https://user-images.githubusercontent.com/69371709/109755471-e90c2780-7b9a-11eb-801b-1eba19d0247b.png)
+![image](https://user-images.githubusercontent.com/69371709/109755546-148f1200-7b9b-11eb-87cb-c3eed3617620.png)
+
 
   
  <br>
