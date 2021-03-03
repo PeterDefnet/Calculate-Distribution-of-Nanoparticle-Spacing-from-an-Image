@@ -56,7 +56,7 @@ The SciPy implementation outputs all connected vertices, and with a little logic
 ![image](https://user-images.githubusercontent.com/69371709/109754220-7dc15600-7b98-11eb-9cd4-4357d06a9aae.png)
 
   
-Overall, this tool serves as a quick and reliable method to characterize the particle spacing in our lab's newly developed arrays! 
+Overall, this tool serves as a quick and reliable method to characterize the particle spacing for our lab's newly developed arrays! 
 
 
 
