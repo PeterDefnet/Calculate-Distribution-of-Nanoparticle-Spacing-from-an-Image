@@ -37,16 +37,17 @@ The image below show the result of the tessellation on all points in the image.
 ![image](https://user-images.githubusercontent.com/69371709/109754018-2327fa00-7b98-11eb-8149-43ebc3d64b24.png)
 
   
-The SciPy implementation outputs all connected vertices, and with a little logic, can easily identify the points that are direct neighbors. See below for an example, where the red dot is the point in question, and bright yellow spots are identified as direct neighbors. 
+The SciPy implementation outputs all connected vertices, and with a little logic, can easily identify the points that are direct neighbors. See below for two examples, where the red dot is the point in question, and bright yellow spots are identified as direct neighbors. 
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/69371709/109754323-a3e6f600-7b98-11eb-840e-0cc096fa9043.png)
+![image](https://user-images.githubusercontent.com/69371709/109755471-e90c2780-7b9a-11eb-801b-1eba19d0247b.png)
 
   
  <br>
  
- Lastly, we calculate the Euclidean distance between all neighboring points, where only the distances from the yellow to red dots are considered. The results in a histogram. 
+ Lastly, we calculate the Euclidean distance between all neighboring points, where only the distances from the yellow to red dots are considered. The results are displayed in a histogram. 
  
  <br>
 
