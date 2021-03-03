@@ -60,9 +60,7 @@ Overall, this tool serves as a quick and reliable method to characterize the par
 
 
 
-<br>
-<br>
-Please click each Figure to view in higher resolution!
+
 
 <br>
 <br>
