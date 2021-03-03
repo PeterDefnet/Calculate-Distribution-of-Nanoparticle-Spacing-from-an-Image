@@ -7,7 +7,7 @@ Here I calculate the distribution of interparticle spacing between thousands of 
 **Motivation:**
 <br>
 <br>
-My doctoral lab is a leader in the field of making nanoelectrode arrays. We have a new design in the pipeline that is dependent on single nanoparticles acting as electrodes, and are fabricated by supporting randomly dispersed particles in a polymer membrane. Unlike our previous designs, the electrode spacing is not well-defined (and effectively random!). Therefore, we needed a method to determine the average electrode spacing - which defines the spatial resolution of our measurements. 
+My doctoral lab is a leader in the field of making nanoelectrode arrays. We are working on a new design that is dependent on single nanoparticles acting as electrodes, and are fabricated by supporting randomly dispersed particles in a polymer membrane. Unlike our previous designs, the electrode spacing is not well-defined (and effectively random!). Therefore, we needed a method to determine the average electrode spacing - which defines the spatial resolution of our measurements. 
 <br>
 <br>
 
