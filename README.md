@@ -22,7 +22,7 @@ I tackled this problem by first extracting the (x,y) coordinates from a darkfiel
 
 <br>
 
-The yellow circles show the identified particles. The large circles demonstrate that closely packed particles could not be resolved using this method, and are identified as a single unit. Considering that there are <20 large circles, and over 1000 particles in the image, we agree that this is acceptable error. 
+The yellow circles show the identified particles. The large circles demonstrate that closely packed particles could not be resolved using this method, and are identified as a single unit. Considering that there are <20 large circles, and over 1000 particles total, we agreed that this was acceptable error. 
 
 <br>
 
