@@ -13,7 +13,7 @@ My doctoral lab is a leader in the field of making nanoelectrode arrays. We are 
 
 **Approach**
 <br>
-I tackled this problem by first extracting the (x,y) coordinates from a darkfield image of the nanoparticles. I chose the use a method known as 'Laplacian of the Gaussian' (LOG), which is a spatial filter that finds the edges of features in the image. (It also perfomed the best, of many methods tried). 
+I tackled this problem by first extracting the (x,y) coordinates from a darkfield image of the nanoparticles. I chose to use a method known as 'Laplacian of the Gaussian' (LOG), which is a spatial filter that finds the edges of features in the image. (It also perfomed the best, of many methods tried). 
 
 <br>
 
