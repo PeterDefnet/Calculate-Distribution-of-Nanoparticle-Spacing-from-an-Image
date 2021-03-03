@@ -46,7 +46,7 @@ The SciPy implementation outputs all connected vertices, and with a little logic
   
  <br>
  
- Lastly, we calculate the Euclidean distance between all neighboring points, and summarize the results in a histogram. 
+ Lastly, we calculate the Euclidean distance between all neighboring points, where only the distances from the yellow to red dots are considered. The results in a histogram. 
  
  <br>
 
