@@ -1,4 +1,4 @@
-# Calculation-of-Particle-Spacing-from-an-Image
+# Measurement of Interparticle Distance
 
 Here I calculate the distribution of interparticle spacing between thousands of nanoparticles randomly positioned on a substrate.
 <br>
